@@ -118,14 +118,20 @@ document.querySelectorAll('[data-evolution-carousel]').forEach((carousel) => {
   let startX = 0;
   let startScroll = 0;
 
-  track.addEventListener('pointerdown', (event) => {
-    if (event.pointerType === 'touch' || event.button !== 0) return;
-    dragging = true;
-    startX = event.clientX;
-    startScroll = track.scrollLeft;
-    track.classList.add('dragging');
-    track.setPointerCapture?.(event.pointerId);
-  });
+track.addEventListener('pointerdown', (event) => {
+  if (event.pointerType === 'touch' || event.button !== 0) return;
+
+  // Don't start carousel dragging when clicking a real control/link
+  if (event.target.closest('a, button, input, select, textarea')) {
+    return;
+  }
+
+  dragging = true;
+  startX = event.clientX;
+  startScroll = track.scrollLeft;
+  track.classList.add('dragging');
+  track.setPointerCapture?.(event.pointerId);
+});
 
   track.addEventListener('pointermove', (event) => {
     if (!dragging) return;
