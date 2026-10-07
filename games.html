@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore artwork and moments from the PlutoHacks Orbi universe." />
+  <title>Orbi Gallery | PlutoHacks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script src="cursor.js" defer></script>
+  <script src="sky-comets.js" defer></script>
+</head>
+<body>
+  <div class="space-bg" aria-hidden="true">
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
+    <div id="stars"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="https://www.plutohacks.com/" aria-label="PlutoHacks home">
+        <img src="assets/images/PlutohacksWhiteLogo.svg" alt="PlutoHacks" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="gallery.html">Gallery</a>
+
+        <div class="archive-menu nav-dropdown games-menu">
+          <button class="archive-button dropdown-button" type="button" aria-expanded="false">
+            Games <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="archive-dropdown dropdown-panel">
+            <a href="games.html"><span>Orbi Arcade</span><small>New</small></a>
+            <a href="games.html#coming-soon"><span>Coming Soon</span></a>
+          </div>
+        </div>
+
+        <div class="archive-menu nav-dropdown">
+          <button class="archive-button dropdown-button" type="button" aria-expanded="false">
+            Orbi Archive <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="archive-dropdown dropdown-panel">
+            <a class="current" href="index.html"><span>2026</span><small>Current</small></a>
+            <a href="archive/2025/index.html"><span>2025</span></a>
+          </div>
+        </div>
+      </div>
+
+      <a class="nav-cta" href="https://www.plutohacks.com/">Register <span>→</span></a>
+    </nav>
+  </header>
+
+  <main class="games-page">
+    <section class="gallery-hero section-shell reveal">
+      <a class="back-link" href="index.html">← Back to Meet Orbi</a>
+      <p class="eyebrow">PLUTOHACKS GAMES</p>
+      <h1>Orbi <span class="brand-gradient">Arcade</span></h1>
+      <p class="gallery-lead">A home for future PlutoHacks mini-games, experiments, and playful interactive ideas featuring Orbi.</p>
+    </section>
+
+    <section class="section-shell games-grid reveal" aria-label="Games overview">
+      <article class="glass-card game-card">
+        <div class="card-visual">
+          <img src="assets/images/orbi-mystery.png" alt="OrbiCTFChallenge" />
+        </div>
+        <div class="icon-pill">🎮</div>
+        <h3>Orbi CTF Challenge</h3>
+        <p>Orbi needs your help! Follow the clues, uncover hidden secrets, and solve a series of cybersecurity challenges to capture every flag. How many can you find?</p>
+        <!-- Replace # with the published URL for this game's separate website. -->
+        <a class="button button-primary game-card-action" href="https://makoaburrito.github.io/OrbiCTFChallenge/">Start the challenge here<span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="glass-card game-card" id="coming-soon">
+        <div class="card-visual">
+          <img src="assets/images/ByteTheBackpack.png" alt="Byte concept art" />
+        </div>
+        <div class="icon-pill">✨</div>
+        <h3>Coming Soon</h3>
+        <p>More game cards here will be added later for new releases, jam prototypes, or student-built mini-games.</p>
+        <!-- Duplicate this card later and replace # with that game's published URL. -->
+        <a class="button button-secondary game-card-action" href="#">Check out here <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+  </main>
+
+  <aside class="orbi-music-player" aria-label="Orbi music player">
+    <button class="orbi-music-toggle" type="button" aria-pressed="false" aria-label="Play Ready, Set, Drift and switch Orbi animation">
+      <span class="orbi-music-gif-wrap" aria-hidden="true">
+        <img class="orbi-music-gif orbi-music-gif-wave" src="assets/music-player/orbi-wave.gif" alt="" />
+        <img class="orbi-music-gif orbi-music-gif-snap" src="assets/music-player/orbi-snap.gif" alt="" hidden />
+      </span>
+      <span class="orbi-music-copy">
+        <strong class="orbi-music-status">Play music</strong>
+        <small>Ready, Set, Drift</small>
+      </span>
+    </button>
+    <audio class="orbi-music-audio" src="assets/music-player/ready-set-drift.mp3" loop preload="none"></audio>
+  </aside>
+
+  <footer class="footer">
+
+    <button class="footer-back-to-top" type="button" aria-label="Back to top" title="Back to top">
+      <span aria-hidden="true">↑</span>
+    </button>
+    <div class="section-shell footer-top">
+      <img src="assets/images/PlutohacksWhiteLogo.svg" alt="PlutoHacks" />
+      <div class="footer-links">
+        <a href="index.html">Meet Orbi</a>
+        <a href="index.html#evolution">Archive</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </div>
+    <div class="section-shell footer-legal">
+      <p class="music-attribution">Music: “Ready, Set, Drift” — Michael Grubb. <a href="https://uppbeat.io/t/michael-grubb/ready-set-drift" target="_blank" rel="noopener noreferrer">Uppbeat attribution</a>.</p>
+      <p>This site is independently hosted and maintained for PlutoHacks. The opinions expressed here are the author’s own and do not reflect the views of Broward College.</p>
+      <p>Broward College does not discriminate on the basis of race, color, sex, gender, national origin, religion, age, disability, marital status, sexual orientation, genetic information or other legally protected classification in its programs and activities.​​ View their non-discrimination policies and Title IX policies.​​
+         The opinions expressed in the BC Sites Network are the author’s own and do not reflect the view of Broward College. BC makes no representation or warranty of any kind, express or implied, regarding accuracy, adequacy, validity, reliability, or availability of the information within this site.</p>
+    </div>
+  </footer>
+
+  <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Full-size gallery image">
+    <div class="lightbox-panel" role="document">
+      <button class="lightbox-close" type="button" aria-label="Close full image">×</button>
+      <img class="lightbox-image" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+      <!--Special Background effects & Cursor-->
+    <canvas id="comet-cursor" aria-hidden="true"></canvas>
+    <canvas id="sky-comets" aria-hidden="true"></canvas>
+</body>
+</html>

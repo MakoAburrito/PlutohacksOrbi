@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet Orbi, the evolving cosmic mascot of PlutoHacks." />
+  <title>Meet Orbi 2026 | PlutoHacks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script src="cursor.js" defer></script>
+  <script src="sky-comets.js" defer></script>
+</head>
+<body>
+  <div class="space-bg" aria-hidden="true">
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
+    <div id="stars"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="https://www.plutohacks.com/" aria-label="PlutoHacks home">
+        <img src="assets/images/PlutohacksWhiteLogo.svg" alt="PlutoHacks" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="#about">About</a>
+        <a href="gallery.html">Gallery</a>
+
+        <div class="archive-menu nav-dropdown games-menu">
+          <button class="archive-button dropdown-button" type="button" aria-expanded="false">
+            Games <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="archive-dropdown dropdown-panel">
+            <a href="games.html"><span>Orbi Arcade</span><small>New</small></a>
+            <a href="games.html#coming-soon"><span>Coming Soon</span></a>
+          </div>
+        </div>
+
+        <div class="archive-menu nav-dropdown">
+          <button class="archive-button dropdown-button" type="button" aria-expanded="false">
+            Orbi Archive <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="archive-dropdown dropdown-panel">
+            <a class="current" href="./index.html">
+              <span>2026</span><small>Current</small>
+            </a>
+            <!-- Change this path after you move the old 2025 page into /archive/2025/ -->
+            <a href="https://makoaburrito.github.io/PlutoHacks2025-About-Orbi/"><span>2025</span></a>
+          </div>
+        </div>
+      </div>
+
+      <a class="nav-cta" href="https://www.plutohacks.com/">Register <span>→</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PLUTOHACKS 2026</p>
+        <h1>Meet Orbi <span class="year-gradient">2026</span></h1>
+        <p class="hero-kicker">The same curious explorer. A brand new journey.</p>
+        <p class="hero-text">
+          Orbi is PlutoHacks’ cosmic mascot and your orbiting hype crew, guiding hackers through a universe of creativity, collaboration, and code.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.plutohacks.com/">Explore PlutoHacks <span>→</span></a>
+          <a class="button button-secondary" href="#evolution">View Orbi Archive</a>
+        </div>
+      </div>
+
+      <div class="hero-art hero-art-clean reveal" aria-label="Orbi 2026 artwork area">
+        <div class="orbi-frame hero-figure">
+          <img src="assets/images/Orbi2026 Hero Image.png" alt="Orbi holding a glowing heart" />
+        </div>
+      </div>
+    </section>
+
+    <div class="hero-wave-divider" aria-hidden="true">
+      <img src="assets/images/layered-waves-orbi.svg" alt="" />
+    </div>
+
+    <section class="about section-shell" id="about">
+      <div class="section-intro reveal">
+        <p class="eyebrow">ABOUT ORBI</p>
+        <h2>A small explorer<br />with a big mission.</h2>
+        <p>
+          Orbi represents the spirit of PlutoHacks: curiosity, creativity, and a community that reaches for more. Every year his look can evolve while the character stays unmistakably Orbi.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="glass-card reveal">
+          <div class="card-visual crop-top">
+            <img src="assets/images/OrbiCuriousExplorer.png" alt="Orbi exploring" />
+          </div>
+          <div class="icon-pill">🪐</div>
+          <h3>The Explorer</h3>
+          <p>Orbi is a curious dreamer who explores new ideas, people, and possibilities across the PlutoHacks universe.</p>
+        </article>
+
+        <article class="glass-card reveal">
+          <div class="card-visual">
+            <img src="assets/images/ByteTheBackpack.png" alt="Byte, Orbi's companion" />
+          </div>
+          <div class="icon-pill">🤖</div>
+          <h3>Byte by His Side</h3>
+          <p>Byte is Orbi’s AI-powered backpack, always nearby with tools, snacks, and last-minute fixes.</p>
+        </article>
+
+        <article class="glass-card reveal">
+          <div class="card-visual star-card" aria-hidden="true">
+            <img src="assets/images/StarSpecial.png" alt="Byte, Orbi's companion" />
+          </div>
+          <div class="icon-pill">✦</div>
+          <h3>A New Look Every Year</h3>
+          <p>Each PlutoHacks season gives Orbi a fresh outfit, new details, and another chapter in his story.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="evolution" id="evolution">
+      <div class="section-shell">
+        <div class="section-heading-row reveal">
+          <div>
+            <p class="eyebrow">THE EVOLUTION</p>
+            <h2>Orbi Through the Years</h2>
+            <p>Same core. New adventures. A visual archive of Orbi’s journey.</p>
+          </div>
+        </div>
+
+        <div class="evolution-carousel" data-evolution-carousel>
+          <div class="evolution-controls" aria-label="Browse Orbi years">
+            <button class="evolution-arrow evolution-prev" type="button" aria-label="Previous Orbi year">←</button>
+            <p class="evolution-hint">Swipe, scroll, or use the arrows to travel through Orbi’s years.</p>
+            <button class="evolution-arrow evolution-next" type="button" aria-label="Next Orbi year">→</button>
+          </div>
+
+          <div class="evolution-viewport">
+            <div class="evolution-track" tabindex="0" aria-label="Orbi yearly evolution timeline">
+              <article class="year-card year-2025 reveal" data-year="2025">
+                <div class="year-copy">
+                  <span class="year-pill">2025 10th Anniversary</span>
+                  <h3>Orbi 2025</h3>
+                  <p class="mini-label">THE ORIGINAL EXPLORER</p>
+                  <p>Our first journey together introduced the PlutoHacks universe with Orbi’s classic spacesuit, Byte, and a heart full of curiosity.</p>
+                  <a href="archive/2025/index.html">Visit 2025 page →</a>
+                </div>
+                <img src="assets/images/OrbiGoodBye2025.png" alt="Orbi 2025" />
+              </article>
+
+              <article class="year-card year-2026 reveal" data-year="2026">
+                <div class="year-copy">
+                  <span class="year-pill current">2026 Current</span>
+                  <h3>Orbi 2026</h3>
+                  <p class="mini-label">BOLDER. BRIGHTER. HIGHER.</p>
+                  <p>A fresh look for a bigger journey. This slot is the final 2026 outfit artwork and new theme Build, Protect, Innovate.</p>
+                </div>
+                <img src="assets/images/Chibi Astronaut Among Golden Orbits.png" alt="Orbi 2026" />
+              </article>
+
+              <article class="year-card year-2027 reveal" data-year="2027">
+                <div class="year-copy">
+                  <span class="year-pill">2027</span>
+                  <h3>Orbi 2027</h3>
+                  <p class="mini-label">BIGGER. BETTER. BEYOND.</p>
+                  <p>A fresh look for a bigger journey. This slot is ready for the final 2027 outfit artwork and new theme details.</p>
+                </div>
+                <div class="future-orbi">
+                  <span>2027<br />ART COMING SOON</span>
+                </div>
+              </article>
+
+              <!-- Future years are intentionally simple to add.
+                   Copy one .year-card, change the year/content/image, and it automatically
+                   joins the horizontal timeline without changing the JavaScript. -->
+            </div>
+          </div>
+
+          <div class="evolution-progress" aria-hidden="true">
+            <span class="evolution-progress-bar"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-shell" id="gallery">
+      <div class="section-heading-row reveal">
+        <div>
+          <p class="eyebrow">GALLERY</p>
+          <h2>Orbi Gallery</h2>
+          <p>A collection of moments, missions, and experiments from across the PlutoHacks universe.</p>
+        </div>
+        <a href="gallery.html" class="text-link">View Full Gallery →</a>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-main reveal">
+          <button class="gallery-open" type="button" data-caption="Orbi on his planet" aria-label="Open full image: Orbi on his planet">
+            <img src="assets/images/OrbiAwayonPlanet.png" alt="Orbi on his planet" />
+            <span class="gallery-expand" aria-hidden="true">↗</span>
+          </button>
+        </figure>
+        <figure class="gallery-item reveal">
+          <button class="gallery-open" type="button" data-caption="Orbi Walking" aria-label="Open full image: Orbi Walking">
+            <img src="assets/images/WalkingOrbi.png" alt="Orbi Walking" />
+            <span class="gallery-expand" aria-hidden="true">↗</span>
+          </button>
+        </figure>
+        <figure class="gallery-item reveal">
+          <button class="gallery-open" type="button" data-caption="Byte, Orbi's companion" aria-label="Open full image: Byte, Orbi's companion">
+            <img src="assets/images/ByteThebackpackSoloJourney.webp" alt="Byte" />
+            <span class="gallery-expand" aria-hidden="true">↗</span>
+          </button>
+        </figure>
+        <figure class="gallery-item reveal">
+          <button class="gallery-open" type="button" data-caption="Orbi looking upward" aria-label="Open full image: Orbi looking upward">
+            <img src="assets/images/OrbiLookingUp.png" alt="Orbi looking upward" />
+            <span class="gallery-expand" aria-hidden="true">↗</span>
+          </button>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta section-shell reveal">
+      <div class="cta-panel">
+        <div>
+          <p class="eyebrow">READY FOR A NEW ADVENTURE?</p>
+          <h2>Explore <span class="brand-gradient">PlutoHacks 2026</span></h2>
+          <p>Meet new people, build amazing projects, and be part of a community that reaches beyond the ordinary.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.plutohacks.com/">Register for PlutoHacks <span>→</span></a>
+            <a class="button button-secondary" href="#evolution">View Past Orbi Versions</a>
+          </div>
+        </div>
+        <div class="cta-planet-art" aria-hidden="true">
+          <img src="assets/images/CTAPlanet.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="orbi-music-player" aria-label="Orbi music player">
+    <button class="orbi-music-toggle" type="button" aria-pressed="false" aria-label="Play Ready, Set, Drift and switch Orbi animation">
+      <span class="orbi-music-gif-wrap" aria-hidden="true">
+        <img class="orbi-music-gif orbi-music-gif-wave" src="assets/music-player/orbi-wave.gif" alt="" />
+        <img class="orbi-music-gif orbi-music-gif-snap" src="assets/music-player/orbi-snap.gif" alt="" hidden />
+      </span>
+      <span class="orbi-music-copy">
+        <strong class="orbi-music-status">Play music</strong>
+        <small>Ready, Set, Drift</small>
+      </span>
+    </button>
+    <audio class="orbi-music-audio" src="assets/music-player/ready-set-drift.mp3" loop preload="none"></audio>
+  </aside>
+
+  <footer class="footer">
+
+    <button class="footer-back-to-top" type="button" aria-label="Back to top" title="Back to top">
+      <span aria-hidden="true">↑</span>
+    </button>
+    <div class="section-shell footer-top">
+      <img src="assets/images/PlutohacksWhiteLogo.svg" alt="PlutoHacks" />
+      <div class="footer-links">
+        <a href="https://www.plutohacks.com/">Home</a>
+        <a href="#about">About</a>
+        <a href="#evolution">Archive</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </div>
+    <div class="section-shell footer-legal">
+      <p class="music-attribution">Music: “Ready, Set, Drift” — Michael Grubb. <a href="https://uppbeat.io/t/michael-grubb/ready-set-drift" target="_blank" rel="noopener noreferrer">Uppbeat attribution</a>.</p>
+      <p>This site is independently hosted and maintained for PlutoHacks. The opinions expressed here are the author’s own and do not reflect the views of Broward College.</p>
+      <p>Broward College does not discriminate on the basis of race, color, sex, gender, national origin, religion, age, disability, marital status, sexual orientation, genetic information or other legally protected classification in its programs and activities.​​ View their non-discrimination policies and Title IX policies.​​ 
+         The opinions expressed in the BC Sites Network are the author’s own and do not reflect the view of Broward College. BC makes no representation or warranty of any kind, express or implied, regarding accuracy, adequacy, validity, reliability, or availability of the information within this site.</p>
+    </div>
+  </footer>
+  <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Full-size gallery image">
+    <div class="lightbox-panel" role="document">
+      <button class="lightbox-close" type="button" aria-label="Close full image">×</button>
+      <img class="lightbox-image" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+    <!--Special Background effects & Cursor-->
+    <canvas id="comet-cursor" aria-hidden="true"></canvas>
+    <canvas id="sky-comets" aria-hidden="true"></canvas>
+</body>
+</html>
